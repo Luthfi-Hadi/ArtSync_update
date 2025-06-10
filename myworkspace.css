@@ -1,0 +1,183 @@
+body {
+margin: 0;
+font-family: 'Poppins', sans-serif;
+line-height: 1.6;
+background: #f5f5f5;
+color: #333;
+padding-top: 80px;
+}
+
+
+.logo {
+font-size: 1.3rem;
+font-weight: 500;
+margin: 0;
+}
+
+.nav {
+display: flex;
+gap: 1.2rem;
+justify-content: flex-end;
+}
+
+.nav a {
+color: #fff;
+text-decoration: none;
+font-weight: 400;
+font-size: 0.95rem;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: #f5f5f5;
+  color: #333;
+
+  /* layout flex supaya footer bisa di bawah */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header fixed */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  padding: 0.7rem 0;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+/* Container umum */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Main konten yang bisa dorong footer ke bawah */
+main {
+  flex-grow: 1;
+  padding-top: 80px; /* ruang header fixed */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section umum */
+.section {
+  padding: 3rem 0;
+}
+
+/* Workspace khusus */
+.section.workspace {
+  background: #fff;
+  flex-grow: 1;
+}
+
+/* Workspace grid card */
+.workspace-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card umum */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Tombol umum */
+.btn {
+  display: inline-block;
+  background-color: #222;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 30px 0 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto;
+}
+
+.footer .container.footer-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer-contact, .footer-social {
+  flex: 1 1 250px;
+}
+
+.footer-contact h3, .footer-social h3 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ccc;
+}
+
+.footer-social a {
+  color: #ccc;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #ff69b4;
+}
+
+.footer p.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #777;
+}
